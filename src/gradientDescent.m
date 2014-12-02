@@ -1,3 +1,6 @@
+% O objetivo desse método é encontrar os thetas que melhor se ajustem aos dados, olhando para todos os dados em cada iteração...
+% Para mais informações sobre a técnica recomendo essa leitura: http://www.onmyphd.com/?p=gradient.descent
+% Estou utilizando o J_history para acompanhar se a técnica está funcionando corretamente
 function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 	m = length(y);
 	J_history = zeros(num_iters, 1);
