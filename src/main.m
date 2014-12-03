@@ -25,6 +25,9 @@ alpha = 0.01;
 % Executo o Gradiente Descendente para encontrar os Thetas
 theta = gradientDescent(X, y, theta, alpha, iterations);
 
+% Salvando os últimos thetas encontrados
+csvwrite('../data/theta.csv', theta);
+
 fprintf('Thetas encontrados pelo Gradiente Descendente: ');
 fprintf('%f %f \n', theta(1), theta(2));
 % Exibo na tela os Thetas encontrados
